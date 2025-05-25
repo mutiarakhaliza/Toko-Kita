@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Kita</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #ff6600;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .product-card h3 {
+      margin: 10px 0;
+    }
+    .product-card p {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #ff6600;
+    }
+    .buy-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    @media (max-width: 600px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Toko Kita</h1>
+  <p>Belanja Mudah, Harga Bersahabat!</p>
+</header>
+
+<nav>
+  <a href="#products">Produk</a>
+  <a href="#contact">Kontak</a>
+</nav>
+
+<section id="products">
+  <h2>Daftar Produk</h2>
+  <div class="products">
+
+    <div class="product-card">
+      <img <img src="https://i.pinimg.com/236x/b8/5b/ed/b85bedbe7782982b7dfd49f9460d229e.jpg" />
+      <h3>Sepatu Sneakers</h3>
+      <p>Rp 250.000</p>
+      <a class="buy-button" href="https://wa.me/6289603225883?text=Halo%20saya%20mau%20beli%20Sepatu%20Sneakers" target="_blank">Beli Sekarang</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.pinimg.com/236x/95/04/c3/9504c3f368820ae26428ba4f929ae369.jpg" />
+      <h3>Kaos Polos</h3>
+      <p>Rp 80.000</p>
+      <a class="buy-button" href="https://wa.me/6289603225883?text=Halo%20saya%20mau%20beli%20Kaos%20Polos" target="_blank">Beli Sekarang</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.pinimg.com/236x/0c/9e/7d/0c9e7d766793fae2eda1fdd647c64b80.jpg" />
+      <h3>Jaket Hoodie</h3>
+      <p>Rp 300.000</p>
+      <a class="buy-button" href="https://wa.me/6289603225883?text=Halo%20saya%20mau%20beli%20Sepatu%20Sneakers" target="_blank">Beli Sekarang</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Kontak Kami</h2>
+  <p>WhatsApp: <a href="https://wa.me/6289603225883" target="_blank">Klik di sini</a></p>
+  <p>Email: tokokita@email.com</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Toko Kita. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
